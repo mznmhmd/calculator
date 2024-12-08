@@ -18,10 +18,11 @@ let methodsymbol = ''
 for(let i = 0 ; i < symbol.length ; i++){
 symbol[i].addEventListener('click' , ()=>{
     if(firstdata == ''){
-    firstdata = result.innerText
-    methodsymbol = symbol[i].innerText
-    uisymbol.innerText = symbol[i].innerText
-}else{
+        firstdata = result.innerText
+        methodsymbol = symbol[i].innerText
+        uisymbol.innerText = symbol[i].innerText
+    }else{
+    secondaryData.innerText = eval(firstdata + methodsymbol + seconddata)
     uisymbol.innerText = symbol[i].innerText
     seconddata = result.innerText
     methodsymbol = uisymbol.innerText
@@ -61,5 +62,5 @@ theme.addEventListener('change',(event)=>{
     }
 })
 delbtn.addEventListener('click', () =>{
- result.innerText = result.innerText.slice(0, -1);
- });
+    result.innerText = result.innerText.slice(0, -1);
+});

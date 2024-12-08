@@ -28,6 +28,14 @@ body{
   height: 34px;
 }
 }
+@keyframes transition {
+  0%{
+    transform: translateY(0%);
+  }
+  100%{
+    transform: translateY(-30%);
+  }
+}
 h3 {
     font-family: "Ubuntu", serif;
     font-size: 35px;
